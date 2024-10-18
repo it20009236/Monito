@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Header from "./components/NavBar/NavBar";
 import Hero from "./components/Home/Home";
 import About from "./components/Home/About";
-import Category from "./components/Home/Category";
+import Category from "./components/Catergory/Catergory";
 import Contact from "./components/Home/Contact";
 
 import Footer from "./components/Footer/Footer";
