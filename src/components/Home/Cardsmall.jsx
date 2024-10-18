@@ -26,29 +26,36 @@ const App = () => {
     <div className="w-full max-w-[1440px] mx-auto px-5">
       <header className="mb-[40px]">
         <h1 className="font-medium text-[16px] leading-[24px] text-[#000000]">
-          You already know ?
+          You already know?
         </h1>
         <h2 className="font-bold text-[24px] leading-[36px] text-[#003459]">
           Useful pet knowledge
         </h2>
       </header>
 
-      <div className="flex gap-[20px] justify-between mb-[20px]">
-        <Card
-          image="./assets/frame-7.svg"
-          title="What is a Pomeranian? How to Identify Pomeranian Dogs"
-          description="The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of the cutest pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed."
-        />
-        <Card
-          image="./assets/frame-7-2.svg"
-          title="Dog Diet You Need To Know"
-          description="Dividing a dog's diet may seem simple at first, but there are some rules you should know so that your dog can easily absorb the nutrients in the diet. For those who are just starting to raise dogs, especially newborn puppies with relatively weak resistance."
-        />
-        <Card
-          image="./assets/frame-7-3.svg"
-          title="Why Dogs Bite and Destroy Furniture and How to Prevent It Effectively"
-          description="Dog bites are common during development. However, no one wants to see their furniture or important items being bitten by a dog."
-        />
+      {/* Responsive Flexbox for Cards */}
+      <div className="flex flex-wrap gap-[20px] mb-[20px]">
+        <div className="w-full sm:w-1/2 lg:w-1/3">
+          <Card
+            image="./assets/frame-7.svg"
+            title="What is a Pomeranian? How to Identify Pomeranian Dogs"
+            description="The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of the cutest pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed."
+          />
+        </div>
+        <div className="w-full sm:w-1/2 lg:w-1/3">
+          <Card
+            image="./assets/frame-7-2.svg"
+            title="Dog Diet You Need To Know"
+            description="Dividing a dog's diet may seem simple at first, but there are some rules you should know so that your dog can easily absorb the nutrients in the diet. For those who are just starting to raise dogs, especially newborn puppies with relatively weak resistance."
+          />
+        </div>
+        <div className="w-full sm:w-1/2 lg:w-1/3">
+          <Card
+            image="./assets/frame-7-3.svg"
+            title="Why Dogs Bite and Destroy Furniture and How to Prevent It Effectively"
+            description="Dog bites are common during development. However, no one wants to see their furniture or important items being bitten by a dog."
+          />
+        </div>
       </div>
 
       <button className="flex items-center gap-[10px] border-[1.5px] border-[#003459] text-[#003459] rounded-[57px] px-[28px] py-[12px] transition-colors duration-300 hover:bg-[#003459] hover:text-[#fdfdfd]">

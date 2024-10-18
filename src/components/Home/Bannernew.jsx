@@ -2,20 +2,20 @@ import React from 'react';
 
 const AdoptionBanner = () => {
   return (
-    <div className="w-full max-w-[1180px] h-[378px] bg-[#FFB775] rounded-[20px] p-[40px] flex items-center justify-between relative overflow-hidden mx-auto">
-      <div className="max-w-[50%]">
-        <h1 className="font-extrabold text-[52px] leading-[68px] text-[#003459] flex items-center gap-[10px]">
+    <div className="hidden md:flex w-full max-w-[1180px] h-auto bg-[#FFB775] rounded-[20px] p-[40px] flex-col md:flex-row items-center justify-between relative overflow-hidden mx-auto">
+      <div className="max-w-full md:max-w-[50%]">
+        <h1 className="font-extrabold text-[36px] md:text-[52px] leading-[45px] md:leading-[68px] text-[#003459] flex items-center gap-[10px]">
           Adoption 
-          <img src="./assets/fontisto-paw.svg" alt="Paw" className="h-[32px] w-auto" />
+          <img src="./assets/fontisto-paw.svg" alt="Paw" className="h-[24px] md:h-[32px] w-auto" />
         </h1>
-        <h2 className="font-bold text-[36px] leading-[54px] text-[#003459] capitalize my-[20px]">
+        <h2 className="font-bold text-[28px] md:text-[36px] leading-[36px] md:leading-[54px] text-[#003459] capitalize my-[10px] md:my-[20px]">
           We Need Help. So Do They.
         </h2>
-        <p className="font-medium text-[12px] leading-[18px] text-[#242B33] mb-[20px]">
+        <p className="font-medium text-[14px] md:text-[12px] leading-[20px] md:leading-[18px] text-[#242B33] mb-[15px] md:mb-[20px]">
           Adopt a pet and give it a home,<br />
           it will love you back unconditionally.
         </p>
-        <div className="flex gap-[15px]">
+        <div className="flex flex-col md:flex-row gap-[15px]">
           <button className="flex items-center justify-center gap-[8px] px-[28px] py-[14px] rounded-[57px] bg-[#003459] text-[#FDFDFD] cursor-pointer transition-colors duration-300">
             Explore Now
           </button>
@@ -25,7 +25,7 @@ const AdoptionBanner = () => {
           </button>
         </div>
       </div>
-      <img src="./assets/pngegg-4-1.svg" alt="Hands" className="absolute right-0 bottom-[-40px] w-[50%] h-auto" />
+      <img src="./assets/pngegg-4-1.svg" alt="Hands" className="absolute right-0 bottom-[-40px] w-[50%] h-auto md:w-[50%] md:bottom-[-20px]" />
     </div>
   );
 };

@@ -66,17 +66,33 @@ const Banner = () => {
       </div>
 
       {/* Container for FilterSidebar and ProductList */}
-      <div className="flex mt-10">
+      <div className="flex mt-10 flex-wrap">
         {/* Filter Sidebar on the left */}
-        <div className="w-72"> {/* Adjust width as needed */}
+        <div className="hidden lg:block w-72"> {/* Hide on smaller screens */}
           <FilterSidebar />
         </div>
-        
+
         {/* Product List on the right */}
         <div className="flex-1 ml-4"> {/* Takes the remaining space */}
           <ProductList />
         </div>
       </div>
+
+      {/* Responsive Styles for Product List */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .ProductList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+
+          .ProductList .card {
+            flex: 0 0 48%; /* Two cards per row */
+            margin-bottom: 20px; /* Space between cards */
+          }
+        }
+      `}</style>
     </div>
   );
 };

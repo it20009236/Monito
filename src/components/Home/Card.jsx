@@ -69,7 +69,8 @@ const ProductGallery = () => {
         View more
         <img src="./assets/arrow-chevron-right-md.svg" alt="Chevron Right" className="ml-2" />
       </button>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      {/* Responsive Grid Layout */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
         {products.map((product) => (
           <div className="bg-white rounded-lg overflow-hidden shadow-lg" key={product.id}>
             <img src={product.image} alt={product.name} className="w-full h-64 object-cover" />
