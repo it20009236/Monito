@@ -2,13 +2,13 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Header from "./components/NavBar/NavBar";
-import Hero from "./components/Hero/Hero";
-import About from "./components/Hero/About";
-import Category from "./components/Hero/Category";
-import Contact from "./components/Hero/Contact";
+import Hero from "./components/Home/Home";
+import About from "./components/Home/About";
+import Category from "./components/Home/Category";
+import Contact from "./components/Home/Contact";
 
 import Footer from "./components/Footer/Footer";
-import HeroBanner from "./components/Hero/Hero";
+import HeroBanner from "./components/Home/Home";
 // import Slicer from "./components/Slicer/Slicer";
 
 const App = () => {
