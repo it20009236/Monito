@@ -2,9 +2,9 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-white">
+    <header className="bg-transparent">
       {/* Desktop Header */}
-      <div className="hidden md:flex justify-between items-center p-7">
+      <div className="hidden lg:flex justify-between items-center p-7">
         <div className="flex items-center gap-12">
           <img
             src="./assets/frame.svg"
@@ -25,7 +25,7 @@ const Header = () => {
               Category
             </a>
             <a
-              href="/about"
+              href="/"
               className="font-bold text-[16px] leading-6 text-[#003459]"
             >
               About
@@ -69,7 +69,7 @@ const Header = () => {
       </div>
 
       {/* Mobile Header */}
-      <div className="flex md:hidden justify-between items-center px-4 py-2 bg-white w-full max-w-[390px] h-[55px]">
+      <div className="flex lg:hidden justify-between items-center px-4 py-2 bg-white w-full  h-[55px]">
         <img
           src="./assets/menu-hamburger-md.svg"
           alt="Menu"

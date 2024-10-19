@@ -2,7 +2,7 @@ import React from 'react';
 
 function CustomerGallery() {
   return (
-    <div className="w-[1180px] mx-auto bg-[#fdfdfd] py-6 rounded-[20px]">
+    <div className="px-0 md:px-24 bg-[#fdfdfd] py-6 rounded-[20px]">
       <h2 className="text-[24px] font-bold text-[#00171f] pl-4">Our lovely customer</h2>
       <div className="flex gap-3 pl-4 mt-6 overflow-x-scroll">
         <img src="./assets/frame-118.svg" alt="Customer 1" className="w-[248px] h-[340px] rounded-[10px]" />

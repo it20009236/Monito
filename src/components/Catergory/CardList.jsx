@@ -1,29 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 
 // ProductCard Component
-function ProductCard() {
+function ProductCard({ data }) {
   return (
-    <div className="bg-[#FDFDFD] rounded-[12px] shadow-md overflow-hidden max-w-[264px] m-[10px]">
+    <div className="bg-[#FDFDFD] rounded-[12px] shadow-md overflow-hidden xl:w-[200px] m-[10px]">
       <img
-        src="./assets/frame-7-15.svg"
+        src={data.image}
         alt="Alaskan Malamute Grey"
-        className="w-full h-[264px] object-cover"
+        className="w-full h-[140px] sm:h-[190px] md:h-[200px]  object-cover"
       />
-      <div className="p-[8px]">
-        <h3 className="font-bold text-[16px] leading-[24px] text-[#00171F] mb-[8px]">
-          MO512 - Alaskan Malamute Grey
+      <div className="p-2">
+        <h3 className="font-bold text-md text-[#00171F] my-2">
+          {data.id} - {data.name}
         </h3>
-        <div className="flex justify-between mb-[8px]">
-          <div className="flex gap-[6px]">
-            <span className="font-medium text-[12px] text-[#667479]">Gene:</span>
-            <span className="font-bold text-[12px] text-[#667479]">Male</span>
-          </div>
-          <div className="flex gap-[6px]">
-            <span className="font-medium text-[12px] text-[#667479]">Age:</span>
-            <span className="font-bold text-[12px] text-[#667479]">02 months</span>
-          </div>
+        <div className="flex justify-between text-xs text-[#667479]">
+          <span>
+            Gene: <strong>{data.gender}</strong>
+          </span>
+          <span>
+            Age: <strong>{data.age}</strong>
+          </span>
         </div>
-        <div className="font-bold text-[14px] text-[#00171F]">8.900.000 VND</div>
+        <p className="font-bold text-sm text-[#00171F] mt-2">{data.price}</p>
       </div>
     </div>
   );
@@ -63,15 +61,37 @@ function Pagination() {
 
 // ProductList Component
 function ProductList() {
+  const [allpets, setAllPets] = useState([]);
+  const pets = async () =>
+    await fetch("https://monitor-backend-rust.vercel.app/api/pets")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok " + response.statusText);
+        }
+        return response.json(); // Parse JSON response
+      })
+      .then((data) => {
+        setAllPets(data);
+        console.log(data); // Handle the data from the API
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation:", error);
+      });
+
+  useEffect(() => {
+    pets();
+  }, []);
   // Create an array with 12 items to render 12 cards
   const cards = Array.from({ length: 12 });
 
   return (
-    <div className="max-w-[1180px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] p-[20px]">
-      {cards.map((_, index) => (
-        <ProductCard key={index} />
-      ))}
-      {/* Pagination Section */}
+    <div className="flex flex-col gap-5 mb-10">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-3 md:gap-5 justify-items-center">
+        {allpets?.map((data, index) => (
+          <ProductCard key={index} data={data} />
+        ))}
+        {/* Pagination Section */}
+      </div>
       <Pagination />
     </div>
   );
