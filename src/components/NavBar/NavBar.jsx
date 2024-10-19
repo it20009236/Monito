@@ -7,7 +7,7 @@ const Header = () => {
       <div className="hidden lg:flex justify-between items-center p-7">
         <div className="flex items-center gap-12">
           <img
-            src="./assets/frame.svg"
+            src="/assets/frame.svg"
             alt="Logo"
             className="w-[115px] h-[40px]"
           />
@@ -40,7 +40,7 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center bg-[#fdfdfd] rounded-full px-5 py-3 gap-3">
-            <img src="./assets/u-search.svg" alt="Search" className="w-5 h-5" />
+            <img src="/assets/u-search.svg" alt="Search" className="w-5 h-5" />
             <input
               type="text"
               placeholder="Search something here!"
@@ -52,7 +52,7 @@ const Header = () => {
           </button>
           <div className="flex items-center gap-2 px-2 py-2">
             <img
-              src="./assets/frame-2.svg"
+              src="/assets/frame-2.svg"
               alt="Currency Icon"
               className="w-4 h-4"
             />
@@ -60,7 +60,7 @@ const Header = () => {
               VND
             </span>
             <img
-              src="./assets/arrow-caret-down-sm.svg"
+              src="/assets/arrow-caret-down-sm.svg"
               alt="Dropdown"
               className="w-6 h-6"
             />
@@ -71,12 +71,12 @@ const Header = () => {
       {/* Mobile Header */}
       <div className="flex lg:hidden justify-between items-center px-4 py-2 bg-white w-full  h-[55px]">
         <img
-          src="./assets/menu-hamburger-md.svg"
+          src="/assets/menu-hamburger-md.svg"
           alt="Menu"
           className="w-8 h-8"
         />
-        <img src="./assets/frame.svg" alt="Logo" className="w-[92px] h-8" />
-        <img src="./assets/vector.svg" alt="Search" className="w-8 h-8" />
+        <img src="/assets/frame.svg" alt="Logo" className="w-[92px] h-8" />
+        <img src="/assets/vector.svg" alt="Search" className="w-8 h-8" />
       </div>
     </header>
   );

@@ -30,7 +30,7 @@ const PetGallery = () => {
       <button className="flex items-center justify-center border border-[#003459] rounded-full px-7 py-3 text-[#003459] bg-transparent font-medium text-sm mb-10 mx-auto">
         View more
         <img
-          src="./assets/arrow-chevron-right-md.svg"
+          src="/assets/arrow-chevron-right-md.svg"
           alt="Chevron Right"
           className="ml-2"
         />

@@ -12,11 +12,11 @@ const HeroBanner = () => {
       <div className="relative top-0  h-[900px]  md:h-[600px] bg-gradient-to-r z-0 from-[#FCEED5] via-[#FCEED5] to-[#FFE7BA]">
         {/* Hero Section */}
         <img
-          src="src/assets/Group 1.png"
+          src="/assets/Group 1.png"
           alt="Girl with Dog"
           className="absolute hidden md:block h-full w-full object-cover -z-10"
         />
-          
+
         <div className="z-10">
           <Header></Header>
         </div>
@@ -39,7 +39,7 @@ const HeroBanner = () => {
               <button className="flex items-center border border-[#003459] rounded-full py-3 px-6 text-[#003459] bg-transparent font-medium text-base hover:bg-[#003459] hover:text-white transition-colors">
                 View Intro
                 <img
-                  src="./assets/media-play-circle.svg"
+                  src="/assets/media-play-circle.svg"
                   alt="Play"
                   className="w-6 h-6 ml-2"
                 />
@@ -53,7 +53,7 @@ const HeroBanner = () => {
           {/* Image Container */}
         </div>
         <img
-          src="src/assets/Group 2.png"
+          src="/assets/Group 2.png"
           alt="Girl with Dog"
           className=" md:hidden w-full absolute bottom-0 h-1/2 object-cover  -z-10"
         />

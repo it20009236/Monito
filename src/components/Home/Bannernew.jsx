@@ -8,7 +8,7 @@ const AdoptionBanner = () => {
           <h1 className="font-extrabold text-[36px] md:text-[52px] leading-[45px] md:leading-[68px] text-[#003459] flex items-center gap-[10px]">
             Adoption
             <img
-              src="./assets/fontisto-paw.svg"
+              src="/assets/fontisto-paw.svg"
               alt="Paw"
               className="h-[24px] md:h-[32px] w-auto"
             />
@@ -28,7 +28,7 @@ const AdoptionBanner = () => {
             <button className="flex items-center justify-center gap-[8px] px-[28px] py-[14px] border border-[#003459] text-[#003459] rounded-[57px] bg-transparent cursor-pointer transition-colors duration-300 hover:bg-[#003459] hover:text-[#FDFDFD]">
               View Intro
               <img
-                src="./assets/media-play-circle.svg"
+                src="/assets/media-play-circle.svg"
                 alt="Play"
                 className="h-[24px] w-[24px]"
               />
@@ -36,7 +36,7 @@ const AdoptionBanner = () => {
           </div>
         </div>
         <img
-          src="./assets/pngegg-4-1.svg"
+          src="/assets/pngegg-4-1.svg"
           alt="Hands"
           className="absolute right-[-120px] -bottom-10 h-auto  md:bottom-[-150px]"
         />
