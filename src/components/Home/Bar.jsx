@@ -2,7 +2,7 @@ import React from 'react';
 
 const PetSellers = () => {
   return (
-    <div className="max-w-7xl mx-auto p-10 flex flex-col gap-4">
+    <div className="hidden w-full md:flex flex-col gap-4">
       <header className="flex justify-between items-center">
         <div className="flex items-baseline gap-2">
           <span className="font-medium text-base text-black">Proud to be part of</span>
@@ -20,7 +20,7 @@ const PetSellers = () => {
           />
         </button>
       </header>
-      <div className="flex flex-wrap justify-between items-center mt-10 gap-4">
+      <div className="flex flex-wrap justify-center items-center mt-10 gap-4">
         <img src="./assets/frame-34.svg" alt="Sheba logo" className="max-w-[168px] object-contain" />
         <img src="./assets/frame-35.svg" alt="Whiskas logo" className="max-w-[168px] object-contain" />
         <img src="./assets/frame-36.svg" alt="Bakers logo" className="max-w-[168px] object-contain" />

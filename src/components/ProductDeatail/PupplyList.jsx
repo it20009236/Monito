@@ -1,57 +1,67 @@
-import React from 'react';
-
-function PuppyCard({ image, title, gene, age, price }) {
-  return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs w-full">
-      <img src={image} alt={title} className="w-full h-64 object-cover" />
-      <div className="p-3">
-        <h3 className="font-bold text-lg text-gray-800 mb-2">{title}</h3>
-        <div className="flex gap-2 text-sm text-gray-500 mb-2">
-          <span className="font-medium">Gene:</span>
-          <span className="font-semibold">{gene}</span>
-          <span className="font-medium">Age:</span>
-          <span className="font-semibold">{age}</span>
-        </div>
-        <p className="font-bold text-base text-gray-800">{price}</p>
-      </div>
-    </div>
-  );
-}
+import React, { useEffect, useState } from "react";
 
 function PuppyGallery() {
+  const [allpets, setAllPets] = useState([]);
+  const pets = async () =>
+    await fetch("https://monitor-backend-rust.vercel.app/api/pets")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok " + response.statusText);
+        }
+        return response.json(); // Parse JSON response
+      })
+      .then((data) => {
+        setAllPets(data);
+        console.log(data); // Handle the data from the API
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation:", error);
+      });
+
+  useEffect(() => {
+    pets();
+  }, []);
   return (
-    <div className="w-full max-w-screen-xl mx-auto p-8">
-      <h2 className="font-bold text-2xl text-blue-900 mb-5">See More Puppies</h2>
-      <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
-        <PuppyCard
-          image="./assets/frame-7.svg"
-          title="MO231 - Pomeranian White"
-          gene="Male"
-          age="02 months"
-          price="6.900.000 VND"
-        />
-        <PuppyCard
-          image="./assets/frame-7-2.svg"
-          title="MO502 - Poodle Tiny Yellow"
-          gene="Female"
-          age="02 months"
-          price="3.900.000 VND"
-        />
-        <PuppyCard
-          image="./assets/frame-7-3.svg"
-          title="MO102 - Poodle Tiny Sepia"
-          gene="Male"
-          age="02 months"
-          price="4.000.000 VND"
-        />
-        <PuppyCard
-          image="./assets/frame-7-4.svg"
-          title="MO512 - Alaskan Malamute Grey"
-          gene="Male"
-          age="02 months"
-          price="8.900.000 VND"
-        />
-      </div>
+    <div className="container md:px-32 py-10">
+      <h2 className="font-bold text-2xl ml-5 text-blue-900 mb-8">
+        See More Puppies
+      </h2>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-3 md:gap-5 justify-items-center">
+      
+      {allpets?.map((pet) => (
+        <a
+          href="/about"
+          className="font-bold text-[16px] leading-6 text-[#003459]"
+        >
+          <div
+            className="bg-white rounded-lg overflow-hidden w-[140px] sm:w-[190px] md:w-[200px] xl:w-[260px] shadow-md col-span-1"
+            key={pet.id}
+          >
+            <img
+              src={pet.image}
+              alt={pet.name}
+              className="w-full h-[140px] sm:h-[190px] md:h-[200px] xl:h-[260px] object-cover"
+            />
+            <div className="p-2">
+              <h3 className="font-bold text-md text-[#00171F] my-2">
+                {pet.id} - {pet.name}
+              </h3>
+              <div className="flex justify-between text-xs text-[#667479]">
+                <span>
+                  Gene: <strong>{pet.gender}</strong>
+                </span>
+                <span>
+                  Age: <strong>{pet.age}</strong>
+                </span>
+              </div>
+              <p className="font-bold text-sm text-[#00171F] mt-2">
+                {pet.price}
+              </p>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
     </div>
   );
 }
