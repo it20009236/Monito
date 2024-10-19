@@ -7,20 +7,20 @@ function ProductDetail() {
         <div className="relative w-full">
           <div className="w-full">
             <div className="absolute top-1/3 w-[42px] h-[42px] bg-white/40 rounded-full flex items-center justify-center transform -translate-y-1/2 cursor-pointer left-4">
-              <img src="./assets/arrow-caret-left-sm.svg" alt="Previous" />
+              <img src="/assets/arrow-caret-left-sm.svg" alt="Previous" />
             </div>
             <img
-              src="./assets/section-1-image-7.svg"
+              src="/assets/section-1-image-7.svg"
               alt="Main"
               className="w-full rounded-none md:rounded-lg"
             />
             <div className="absolute top-1/3 x w-[42px] h-[42px] bg-white/40 rounded-full flex items-center justify-center transform -translate-y-1/2 cursor-pointer right-4">
-              <img src="./assets/arrow-caret-left-sm-2.svg" alt="Next" />
+              <img src="/assets/arrow-caret-left-sm-2.svg" alt="Next" />
             </div>
           </div>
           <div className="mt-5">
             <img
-              src="./assets/frame-136.svg"
+              src="/assets/frame-136.svg"
               alt="Thumbnail"
               className="w-full"
             />
@@ -28,7 +28,7 @@ function ProductDetail() {
           <div className="flex flex-col md:flex-row justify-between items-center p-2 mt-4 bg-gradient-to-r from-[#fceedd] to-[#ffe7ba] rounded-lg">
             <div className="flex items-center">
               <div className="w-8 h-8 bg-[#fceed5] flex items-center justify-center rounded-full mr-2">
-                <img src="./assets/frame.svg" alt="Guarantee Icon" />
+                <img src="/assets/frame.svg" alt="Guarantee Icon" />
               </div>
               <span className="font-bold text-sm text-[#002a48]">
                 100% health guarantee for pets
@@ -36,7 +36,7 @@ function ProductDetail() {
             </div>
             <div className="flex items-center">
               <div className="w-8 h-8 bg-[#fceed5] flex items-center justify-center rounded-full mr-2">
-                <img src="./assets/frame-2.svg" alt="Guarantee Icon" />
+                <img src="/assets/frame-2.svg" alt="Guarantee Icon" />
               </div>
               <span className="font-bold text-sm text-[#002a48]">
                 100% guarantee of pet identification
@@ -45,27 +45,27 @@ function ProductDetail() {
           </div>
           <div className="flex items-center justify-between p-2 mt-5">
             <div className="flex items-center gap-2">
-              <img src="./assets/communication-share-android.svg" alt="Share" />
+              <img src="/assets/communication-share-android.svg" alt="Share" />
               <span className="font-bold text-sm text-[#002a48]">Share:</span>
             </div>
             <div className="flex items-center">
               <img
-                src="./assets/facebook-negative.svg"
+                src="/assets/facebook-negative.svg"
                 alt="Facebook"
                 className="w-5 h-5 ml-4 cursor-pointer"
               />
               <img
-                src="./assets/twitter-negative.svg"
+                src="/assets/twitter-negative.svg"
                 alt="Twitter"
                 className="w-5 h-5 ml-4 cursor-pointer"
               />
               <img
-                src="./assets/instagram-negative.svg"
+                src="/assets/instagram-negative.svg"
                 alt="Instagram"
                 className="w-5 h-5 ml-4 cursor-pointer"
               />
               <img
-                src="./assets/you-tube-negative.svg"
+                src="/assets/you-tube-negative.svg"
                 alt="YouTube"
                 className="w-5 h-5 ml-4 cursor-pointer"
               />
@@ -79,19 +79,19 @@ function ProductDetail() {
           <div className="hidden  text-sm text-[#667479] mb-4 xl:flex items-center">
             <span>Home</span>
             <img
-              src="./assets/arrow-caret-right-sm.svg"
+              src="/assets/arrow-caret-right-sm.svg"
               alt="Arrow"
               className="mx-1"
             />
             <span>Dog</span>
             <img
-              src="./assets/arrow-caret-right-sm-2.svg"
+              src="/assets/arrow-caret-right-sm-2.svg"
               alt="Arrow"
               className="mx-1"
             />
             <span>Large Dog</span>
             <img
-              src="./assets/arrow-caret-right-sm-3.svg"
+              src="/assets/arrow-caret-right-sm-3.svg"
               alt="Arrow"
               className="mx-1"
             />
@@ -114,7 +114,7 @@ function ProductDetail() {
             </button>
             <button className="px-3 md:px-7 py-2 md:py-4 flex items-center border-2 border-[#002a48] text-[#002a48] rounded-full text-sm md:text-lg">
               <img
-                src="./assets/communication-chat-dots.svg"
+                src="/assets/communication-chat-dots.svg"
                 alt="Chat"
                 className="mr-2"
               />

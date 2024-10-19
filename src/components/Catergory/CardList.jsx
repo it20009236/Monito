@@ -32,7 +32,7 @@ function Pagination() {
   return (
     <div className="flex items-center gap-3 mt-4">
       <div className="w-[30px] h-[34px] flex items-center justify-center rounded-lg">
-        <img src="./assets/arrow-arrow-right-sm.svg" alt="Previous" />
+        <img src="/assets/arrow-arrow-right-sm.svg" alt="Previous" />
       </div>
       <div className="flex items-center justify-center w-[32px] h-[34px] font-bold text-[18px] leading-[24px] text-[#002A48] rounded-[10px] bg-[#003459] text-[#FDFDFD]">
         1
@@ -53,7 +53,7 @@ function Pagination() {
         28
       </div>
       <div className="w-[30px] h-[34px] flex items-center justify-center rounded-lg">
-        <img src="./assets/arrow-arrow-right-sm-2.svg" alt="Next" />
+        <img src="/assets/arrow-arrow-right-sm-2.svg" alt="Next" />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ function Breadcrumbs() {
         Home
       </span>
       <img
-        src="./assets/arrow-caret-right-sm.svg"
+        src="/assets/arrow-caret-right-sm.svg"
         alt="Arrow"
         className="w-[24px] h-[24px]"
       />
@@ -19,7 +19,7 @@ function Breadcrumbs() {
         Dog
       </span>
       <img
-        src="./assets/arrow-caret-right-sm-2.svg"
+        src="/assets/arrow-caret-right-sm-2.svg"
         alt="Arrow"
         className="w-[24px] h-[24px]"
       />
@@ -33,7 +33,7 @@ function Breadcrumbs() {
 // Banner Component
 const Banner = () => {
   return (
-    <div >
+    <div>
       <Header />
       <div className="flex flex-col items-center">
         <div className=" xl:w-[1180px] mx-2 sm:mx-5 md:mx-10">
@@ -45,12 +45,12 @@ const Banner = () => {
 
             {/* Banner Image */}
             <img
-              src="./assets/group-portrait-adorable-puppies-1.svg"
+              src="/assets/group-portrait-adorable-puppies-1.svg"
               alt="Puppies"
               className="z-10 absolute md:left-[51px]  bottom-0"
             />
             <img
-              src="src\assets\Rectangle 1.png"
+              src="/assets/Rectangle 1.png"
               alt="Puppies"
               className="z-0 absolute right-0 bottom-0 hidden md:block h-[378px]"
             />
@@ -72,7 +72,7 @@ const Banner = () => {
                 <button className="flex items-center gap-[8px] px-4 py-2 md:px-[28px] md:py-[14px] rounded-[57px] border border-blue-900 md:border-[#FDFDFD]  md:text-[#FDFDFD] transition duration-300 ease-in-out hover:bg-[#FDFDFD] hover:text-[#00171F]">
                   View Intro
                   <img
-                    src="./assets/media-play-circle.svg"
+                    src="/assets/media-play-circle.svg"
                     alt="Play"
                     className="w-[24px] h-[24px]"
                   />

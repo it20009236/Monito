@@ -7,7 +7,7 @@ const products = [
     type: "Dog Food",
     size: "385gm",
     price: "350.000 VND",
-    image: "./assets/frame-7-5.svg",
+    image: "/assets/frame-7-5.svg",
     offer: "Free Toy & Free Shaker",
   },
   {
@@ -15,7 +15,7 @@ const products = [
     name: "Costumes Fashion Pet Clother Cowboy Rider",
     type: "Costume",
     price: "500.000 VND",
-    image: "./assets/frame-7-6.svg",
+    image: "/assets/frame-7-6.svg",
     offer: "Free Toy & Free Shaker",
   },
   {
@@ -23,7 +23,7 @@ const products = [
     name: "Costumes Chicken Drumstick Headband",
     type: "Costume",
     price: "400.000 VND",
-    image: "./assets/frame-7-7.svg",
+    image: "/assets/frame-7-7.svg",
     offer: "Free Cat Food",
   },
   {
@@ -31,7 +31,7 @@ const products = [
     name: "Plush Pet Toy",
     type: "Toy",
     price: "250.000 VND",
-    image: "./assets/frame-7-8.svg",
+    image: "/assets/frame-7-8.svg",
     offer: "Free Food & Shaker",
   },
   {
@@ -40,7 +40,7 @@ const products = [
     type: "Cat Food",
     size: "1.5kg",
     price: "165.000 VND",
-    image: "./assets/frame-7.svg",
+    image: "/assets/frame-7.svg",
     offer: "Free Toy & Free Shaker",
   },
   {
@@ -48,7 +48,7 @@ const products = [
     name: "Cat scratching ball toy kitten sisal rope ball",
     type: "Toy",
     price: "1.100.000 VND",
-    image: "./assets/frame-7-3.svg",
+    image: "/assets/frame-7-3.svg",
     offer: "Free Food & Shaker",
   },
   {
@@ -56,7 +56,7 @@ const products = [
     name: "Cute Pet Cat Warm Nest",
     type: "Toy",
     price: "410.000 VND",
-    image: "./assets/frame-7-4.svg",
+    image: "/assets/frame-7-4.svg",
     offer: "Free Cat Food",
   },
 ];
@@ -95,7 +95,7 @@ const ProductGallery = () => {
         <button className="flex items-center justify-center border-2 border-[#003459] rounded-full px-7 py-3 text-[#003459] bg-transparent font-medium text-sm mb-10 ">
           View more
           <img
-            src="./assets/arrow-chevron-right-md.svg"
+            src="/assets/arrow-chevron-right-md.svg"
             alt="Chevron Right"
             className="ml-2"
           />
@@ -133,7 +133,7 @@ const ProductGallery = () => {
               </p>
               <div className="flex items-center bg-[#fceed5] rounded-lg py-1 px-2 text-sm font-bold text-[#002a48] mt-2">
                 <img
-                  src="./assets/frame-5.svg"
+                  src="/assets/frame-5.svg"
                   alt="Offer Icon"
                   className="w-5 h-5 mr-2"
                 />
